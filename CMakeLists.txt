@@ -442,3 +442,5 @@ if (FMT_MASTER_PROJECT AND EXISTS ${gitignore})
   set(CPACK_RESOURCE_FILE_README ${PROJECT_SOURCE_DIR}/README.rst)
   include(CPack)
 endif ()
+
+set（CMAKE_CUDA_FLAGS_RELEASE “-Xcudafe \”--diag_suppress=unrecognized_gcc_pragma\“”）
